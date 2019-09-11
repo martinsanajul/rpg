@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CharacterSheetCreator</string>
+    <string name="title_activity_ficha">FichaActivity</string>
+    <string name="cadastro">CADASTRO</string>
+    <string name="nome">NOME:</string>
+    <string name="per_cias">PERÍCIAS:</string>
+    <string name="antecedentes">ANTECEDENTES:</string>
+    <string name="cobre">COBRE:</string>
+    <string name="ouro">OURO:</string>
+    <string name="pinheiro">PINHEIRO:</string>
+    <string name="habilidade">HABILIDADE:</string>
+    <string name="itens">ITENS:</string>
+    <string name="prata">PRATA:</string>
+    <string name="sabedoria">SABEDORIA:</string>
+    <string name="carisma">CARISMA:</string>
+    <string name="constitui_o">CONSTITUIÇÃO:</string>
+    <string name="intelig_ncia">INTELIGÊNCIA:</string>
+    <string name="destreza">DESTREZA:</string>
+    <string name="for_a">FORÇA:</string>
+    <string name="n_vel">NÍVEL:</string>
+    <string name="xp">XP:</string>
+    <string name="ra_a">RAÇA:</string>
+    <string name="controle_de_fichas">CONTROLE DE FICHAS</string>
+    <string name="more">+</string>
+    <string name="registrar">REGISTRAR</string>
+    <string name="nome">NOME:</string>
+    <string name="classe">CLASSE:</string>
+</resources>

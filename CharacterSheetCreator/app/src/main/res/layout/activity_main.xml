@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/txtCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="FICHA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCadastro"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/nome"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCadastro"
+                android:layout_toEndOf="@id/txtNome"
+                android:layout_toRightOf="@id/txtNome"
+                android:autofillHints=""
+                android:inputType="textPersonName" />
+
+            <Space
+                android:id="@+id/space1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etNome" />
+
+            <TextView
+                android:id="@+id/txtClasse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space1"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="CLASSE:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etClasse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space1"
+                android:layout_toEndOf="@id/txtClasse"
+                android:layout_toRightOf="@id/txtClasse"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:id="@+id/space2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etClasse" />
+
+            <TextView
+                android:id="@+id/txtRaca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space2"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/ra_a"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etRaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/space2"
+                android:layout_toRightOf="@id/txtRaca"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:id="@+id/space3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etRaca" />
+
+            <TextView
+                android:id="@+id/txtXP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space3"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/xp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etXP"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space3"
+                android:layout_toRightOf="@id/txtXP"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/txtNiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space3"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/etXP"
+                android:text="@string/n_vel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etNiv"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space3"
+                android:layout_toRightOf="@id/txtNiv"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:id="@+id/space4"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etXP" />
+
+            <TextView
+                android:id="@+id/txtForca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space4"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/for_a"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etForca"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etXP"
+                android:layout_toRightOf="@id/txtForca"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:id="@+id/space11"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/txtForca" />
+
+
+            <TextView
+                android:id="@+id/txtDest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space11"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/destreza"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etDest"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space11"
+                android:layout_toRightOf="@id/txtDest"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:id="@+id/space5"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/txtDest" />
+
+            <TextView
+                android:id="@+id/txtInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space5"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/intelig_ncia"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etInt"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space5"
+                android:layout_toRightOf="@id/txtInt"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:id="@+id/space6"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etInt" />
+
+            <TextView
+                android:id="@+id/txtConst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space6"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/constitui_o"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etConst"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space6"
+                android:layout_toRightOf="@id/txtConst"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:id="@+id/space7"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etConst" />
+
+            <TextView
+                android:id="@+id/txtCarism"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space7"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/carisma"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etCarism"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space7"
+                android:layout_toRightOf="@id/txtCarism"
+                android:inputType="numberDecimal" />
+
+
+            <Space
+                android:id="@+id/space8"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etCarism" />
+
+            <TextView
+                android:id="@+id/txtSab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space8"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/sabedoria"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etSab"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space8"
+                android:layout_toRightOf="@id/txtSab"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:id="@+id/space9"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etSab" />
+
+            <TextView
+                android:id="@+id/txtHab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space9"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/habilidade"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ethHab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHab"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <Space
+                android:id="@+id/space10"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/ethHab" />
+
+            <TextView
+                android:id="@+id/txtItens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space10"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/itens"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etItens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtItens"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <Space
+                android:id="@+id/space12"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etItens" />
+
+            <TextView
+                android:id="@+id/txtPinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space12"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/pinheiro"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etPinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space12"
+                android:layout_toEndOf="@id/txtPinh"
+                android:layout_toRightOf="@id/txtPinh"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:id="@+id/space13"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etPinh" />
+
+            <TextView
+                android:id="@+id/txtOuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space13"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/ouro"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etOuro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space13"
+                android:layout_toEndOf="@id/txtOuro"
+                android:layout_toRightOf="@id/txtOuro"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:id="@+id/space14"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etOuro" />
+
+            <TextView
+                android:id="@+id/txtPrata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space14"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/prata"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etPrata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space14"
+                android:layout_toEndOf="@id/txtPrata"
+                android:layout_toRightOf="@id/txtPrata"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:id="@+id/space17"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etPrata" />
+
+            <TextView
+                android:id="@+id/txtCobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space17"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/cobre"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etCobre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space17"
+                android:layout_toEndOf="@id/txtCobre"
+                android:layout_toRightOf="@id/txtCobre"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:id="@+id/space15"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etCobre" />
+
+            <TextView
+                android:id="@+id/txtPeri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space15"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/per_cias"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etPer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPeri"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <Space
+                android:id="@+id/space16"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/etPer" />
+
+            <TextView
+                android:id="@+id/txtAnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space16"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/antecedentes"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etAnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAnt"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btnRegis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etAnt"
+                android:onClick="Registro"
+                android:text="@string/registrar" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
